@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/close_modal"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:padding="10dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#ccc"
+            android:text="Filter your search"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Specialty"
+            android:textSize="20sp"
+            android:textColor="#323945"
+            android:textStyle="bold"
+            android:paddingVertical="10dp"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:text="Neurology"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:layout_width="wrap_content"
+
+                android:text="Medicine"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Orthopedics"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Pathology"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Gynecology"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Dermatology"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Radiology"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Neuclear Medicine"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Therapist"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Level"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#323945"
+            android:paddingVertical="10dp"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.ChipGroup
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:text="Assistant Professor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Professor"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="MBBS"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Surgeon"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Medical Officer"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="Phd"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+
+                android:layout_width="wrap_content"
+                android:text="BCS"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton.Icon"
+        android:layout_marginTop="32dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="#311B92"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</LinearLayout>
