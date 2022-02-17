@@ -41,11 +41,11 @@ class SearchFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_search, container, false)
-
         setupDoctorList()
+
         binding.root.setOnClickListener {
             hideKeyboard()
-            binding.searchLayout.clearFocus()
+            binding.searchText.clearFocus()
         }
 
         binding.ivFilter.setOnClickListener {
@@ -116,7 +116,7 @@ class SearchFragment : Fragment() {
 
     private fun showDialog() {
         val dialogFragment = SearchFilterDialogFragment {
-            binding.tvSearchText.clearFocus()
+            binding.searchText.clearFocus()
         }
         dialogFragment.show(childFragmentManager, "signature")
     }

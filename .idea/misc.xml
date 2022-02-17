@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/background.xml" value="0.3296296296296296" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/bg_button.xml" value="0.37083333333333335" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/bg_chip.xml" value="0.3296296296296296" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/bg_doctor_item.xml" value="0.3296296296296296" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/bg_doctor_profile_popup.xml" value="0.3296296296296296" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/bg_search.xml" value="0.37083333333333335" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/ic_baseline_call_end_24.xml" value="0.37083333333333335" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.3296296296296296" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/drawable/ic_filter.xml" value="0.3296296296296296" />
@@ -16,8 +20,8 @@
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/activity_splash.xml" value="0.3546875" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/doctor_dialog.xml" value="0.33" />
-        <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_home.xml" value="0.31527777777777777" />
-        <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_qn_a.xml" value="0.31527777777777777" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_qn_a.xml" value="0.33" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_question_item.xml" value="0.31527777777777777" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_question_item_list.xml" value="0.30277777777777776" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/fragment_search.xml" value="0.33" />
@@ -26,6 +30,7 @@
         <entry key="..\:/android/HelloDoc/app/src/main/res/layout/menu_search_layout.xml" value="0.31527777777777777" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/menu/bottom_menu.xml" value="0.31527777777777777" />
         <entry key="..\:/android/HelloDoc/app/src/main/res/menu/doc_menu.xml" value="0.31527777777777777" />
+        <entry key="..\:/android/HelloDoc/app/src/main/res/xml/network_security_config.xml" value="0.3546875" />
       </map>
     </option>
   </component>

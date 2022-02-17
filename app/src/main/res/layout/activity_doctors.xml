@@ -9,184 +9,198 @@
         android:orientation="vertical"
         android:background="#F6F6F6"
         tools:context=".DoctorActivity">
-        <LinearLayout
-            android:orientation="vertical"
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_weight="1"
-            android:layout_height="0dp">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                android:background="@color/white"
-                app:titleTextColor="#ccc"
-                app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/parimaryVariant"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/avatar" />
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:paddingStart="16dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="James Anderson"
-                        android:textSize="22sp"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Medicine Specialist"
-                        android:textStyle="bold"
-                        android:layout_marginTop="5dp"
-                        android:layout_height="wrap_content"/>
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Patients"
-                        android:layout_marginTop="20dp"
-                        android:textStyle="normal"
-                        android:textSize="18sp"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="2000+"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"/>
-
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Experience"
-                        android:layout_marginTop="20dp"
-                        android:textStyle="normal"
-                        android:textSize="18dp"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="5 years"
-                        android:textStyle="bold"
-                        android:textSize="16sp"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="Age"
-                        android:layout_marginTop="20dp"
-                        android:textStyle="normal"
-                        android:textSize="18sp"
-                        android:layout_height="wrap_content"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:text="30"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-            </RelativeLayout>
-
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            app:titleTextColor="@color/status_bar"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_24" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
             <LinearLayout
-                android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:padding="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/parimaryVariant"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/avatar" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingStart="16dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="James Anderson"
+                            android:textSize="22sp"
+                            android:textColor="@color/status_bar"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Medicine Specialist"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Patients"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="normal"
+                            android:textSize="18sp"
+                            android:textColor="@color/status_bar"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="2000+"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Experience"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/status_bar"
+                            android:textSize="18dp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="5 years"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Age"
+                            android:layout_marginTop="15dp"
+                            android:textStyle="normal"
+                            android:textColor="@color/status_bar"
+                            android:textSize="18sp"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="30"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:orientation="vertical"
-                    android:layout_height="wrap_content">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:text="Degree"
-                    android:textStyle="bold"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
-                    android:textSize="18sp"
-                    android:layout_height="wrap_content"/>
-
-                <com.google.android.material.chip.ChipGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="PHD"
-                        android:layout_height="wrap_content"/>
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="MSC"
-                        android:layout_height="wrap_content"/>
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="BCS"
-                        android:layout_height="wrap_content"/>
-                </com.google.android.material.chip.ChipGroup>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:orientation="vertical"
-                    android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:text="Certifications"
-                    android:textStyle="bold"
-                    android:paddingTop="5dp"
-                    android:paddingBottom="5dp"
+                    android:padding="10dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp"
-                    android:layout_height="wrap_content"/>
-
-                <com.google.android.material.chip.ChipGroup
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
 
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="Specialist in medicine"
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Degree"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/status_bar"
                         android:layout_height="wrap_content"/>
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="Trauma Surgent"
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="PHD"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="MSC"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="BCS"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="Certifications"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textColor="@color/status_bar"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
                         android:layout_height="wrap_content"/>
-                    <com.google.android.material.chip.Chip
-                        android:layout_width="wrap_content"
-                        android:text="ABC Consultant"
-                        android:layout_height="wrap_content"/>
-                </com.google.android.material.chip.ChipGroup>
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="Specialist in medicine"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="Trauma Surgent"
+                            android:layout_height="wrap_content"/>
+                        <com.google.android.material.chip.Chip
+                            android:layout_width="wrap_content"
+                            android:text="ABC Consultant"
+                            android:layout_height="wrap_content"/>
+                    </com.google.android.material.chip.ChipGroup>
+                    </LinearLayout>
                 </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:text="Book Appointment"
+                    android:layout_marginStart="10dp"
+                    android:backgroundTint="@color/status_bar"
+                    android:layout_marginEnd="10dp"
+                    android:shadowDx="10"
+                    android:shadowDy="10"
+                    android:textStyle="bold"
+                    android:shadowRadius="10"
+                    android:shadowColor="#ccc"
+                    android:layout_height="?actionBarSize"/>
 
             </LinearLayout>
-        </LinearLayout>
-
-        <com.google.android.material.button.MaterialButton
-            android:layout_width="match_parent"
-            android:text="Book Appointment"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="@color/black"
-            android:layout_height="?actionBarSize"/>
+        </ScrollView>
 
         </LinearLayout>
 </layout>

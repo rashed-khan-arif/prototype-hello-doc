@@ -5,27 +5,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="2dp"
+        android:layout_marginVertical="8dp"
         android:background="@drawable/bg_doctor_item"
+        android:elevation="4dp"
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="6dp">
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginTop="4dp"
-                android:adjustViewBounds="true"
-                android:scaleX="1"
-                android:scaleY="1"
-                android:src="@drawable/doctor"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView3"
@@ -41,12 +29,12 @@
                 style="@style/RatingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="5"
                 android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:numStars="5"
                 android:progressTint="@android:color/holo_orange_dark"
                 android:rating="3.5"
                 android:stepSize="1"
-                android:layout_marginTop="4dp"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -71,14 +59,26 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="4dp"
-                android:textColor="#000"
-                app:drawableStartCompat="@drawable/ic_baseline_group_24"
                 android:drawablePadding="10dp"
                 android:gravity="center"
                 android:text="1025"
+                android:textColor="#000"
                 android:textStyle="bold"
+                app:drawableStartCompat="@drawable/ic_baseline_group_24"
                 app:layout_constraintStart_toEndOf="@+id/imageView2"
                 app:layout_constraintTop_toBottomOf="@+id/tv_doctor_name" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/person"
+                app:civ_border_color="#ccc"
+                app:civ_border_width="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>
